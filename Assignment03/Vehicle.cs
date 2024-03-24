@@ -19,7 +19,7 @@
         }
 
         // Writing Method to display vehicle details
-        public void DisplayDetails()
+        public virtual void DisplayDetails()
         {
             Console.WriteLine($"Model: {Model}");
             Console.WriteLine($"Manufacturer: {Manufacturer}");
