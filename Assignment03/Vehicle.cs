@@ -8,6 +8,7 @@
         public string Manufacturer { get; set; }
         public int Year { get; set; }
         public decimal RentalPrice { get; set; }
+        public bool IsRented { get; set; }  // New property to track rental status
 
         // Declaring  Constructor
         public Vehicle(string model, string manufacturer, int year, decimal rentalPrice)
@@ -16,6 +17,7 @@
             Manufacturer = manufacturer;
             Year = year;
             RentalPrice = rentalPrice;
+            IsRented = false;  // Initially, the vehicle is not rented
         }
 
         // Writing Method to display vehicle details

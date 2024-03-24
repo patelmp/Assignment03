@@ -83,7 +83,7 @@ namespace Assignment03
     }
 }*/
 
-namespace Assignment03.Tests
+/*namespace Assignment03.Tests
 {
     class MotorcycleTests
     {
@@ -108,3 +108,45 @@ namespace Assignment03.Tests
         }
     }
 }
+*/
+using Assignment03;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create instances of vehicles
+        Vehicle car = new Car("Camry", "Toyota", 2022, 50.00m, 5, "V6", "Automatic", false);
+        Vehicle truck = new Truck("F-150", "Ford", 2021, 70.00m, 4, "Pickup", true);
+        Vehicle motorcycle = new Motorcycle("Ninja", "Kawasaki", 2020, 30.00m, 1000, "Petrol", true);
+
+        // Display details of vehicles
+        Console.WriteLine("Car Details:");
+        car.DisplayDetails();
+        Console.WriteLine();
+
+        Console.WriteLine("Truck Details:");
+        truck.DisplayDetails();
+        Console.WriteLine();
+
+        Console.WriteLine("Motorcycle Details:");
+        motorcycle.DisplayDetails();
+        Console.WriteLine();
+
+        // Testing Rental Agency
+        RentalAgency agency = new RentalAgency();
+
+        // Add vehicles to the fleet
+        agency.AddVehicle(car);
+        agency.AddVehicle(truck);
+        agency.AddVehicle(motorcycle);
+
+        // Rent a vehicle
+        agency.RentVehicle(car);
+
+        // Display total revenue
+        Console.WriteLine($"Total Revenue: {agency.TotalRevenue:C}");
+    }
+}
+
+
