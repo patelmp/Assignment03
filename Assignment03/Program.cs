@@ -9,7 +9,7 @@ namespace Assignment03
         static void Main(string[] args)
         {
             // Creating a Vehicle object
-            Vehicle vehicle = new Vehicle("Camry", "Toyota", 2022, 50.00m);
+            Vehicle vehicle = new Vehicle("Camry", "Toyota", 2022, 70.00m);
 
             // Displaying vehicle details
             Console.WriteLine("Vehicle Details:");
